@@ -1,4 +1,5 @@
-# Getting Started with Sass
+# Vanilla Boilerplate
+What I use to start most of my projects where I'm just writing vanilla HTML/CSS
 
 ## Install Instructions
 * Download this folder
