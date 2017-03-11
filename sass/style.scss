@@ -280,9 +280,13 @@
 
     .btn__wrapper {
       vertical-align: bottom;
-      margin-top: 48px;
-      left: 20%;
       width: 80%;
+      margin: 48px auto;
+      text-align: center;
+
+      &.rgb {
+        margin-top: 36px;
+      }
 
       .btn {
         font: 16px "Montserrat", sans-serif;
