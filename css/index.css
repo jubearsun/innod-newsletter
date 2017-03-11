@@ -1,0 +1,11 @@
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+  position: relative;
+  padding: 0;
+  margin: 0;
+  z-index: 1; }
+
+.title.title--bold {
+  font: normal 600 40px "Montserrat"; }

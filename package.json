@@ -19,6 +19,7 @@
     "browser-sync": "^2.16.0",
     "gulp": "^3.9.1",
     "gulp-sass": "^2.3.2",
+    "minimatch": "^3.0.2",
     "sass": "^0.5.0"
   }
 }

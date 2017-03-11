@@ -1,0 +1,254 @@
+@import 'variables';
+
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+  position: relative;
+  padding: 0;
+  margin: 0;
+  z-index: 1;
+}
+
+.page {
+  .banner {
+    background: $c__blue;
+    text-align: center;
+    padding: 36px;
+
+    .title {
+      display: inline-block;
+
+      &.title--bold {
+        font: normal 600 40px "Montserrat";
+        color: $c__white;
+        margin-right: 16px;
+      }
+
+      &.title--reg {
+        font: normal 200 40px "Montserrat";
+        color: $c__white;
+      }
+    }
+  }
+
+  .content {
+    padding: 4% 8% 4% 8%;
+    font-size: 0;
+
+    .col {
+      vertical-align: top;
+      width: 32%;
+      margin-right: 2%;
+      display: inline-block;
+
+      &:nth-child(3n) {
+        margin-right: 0;
+      }
+
+      &.col--1 {
+        color: $c__black--off;
+        padding: 0 2%;
+
+        .title {
+          &.title--bold {
+            font: normal 600 40px "Montserrat";
+          }
+
+          &.title--reg {
+            font: normal 200 40px "Montserrat";
+          }
+
+          &.title--sub {
+            margin: 10px 0;
+            font: 20px "Karla";
+            color: $c__grey;
+          }
+        }
+
+        .description {
+          font: 16px "Karla";
+          line-height: 1.4em;
+        }
+      }
+
+      &.col--2 {
+        color: $c__black--off;
+
+        .title {
+          &.title--bold {
+            font: normal 600 40px "Montserrat";
+          }
+
+          &.title--reg {
+            font: normal 200 40px "Montserrat";
+          }
+
+          &.title--sub {
+            margin: 10px 0;
+            font: 20px "Karla";
+            color: $c__grey;
+          }
+        }
+
+        img {
+          width: 100%;
+        }
+
+        img.rgb {
+          margin: 18px 0;
+        }
+
+        .description {
+          font: 16px "Karla";
+          line-height: 1.4em;
+        }
+      }
+
+      &.col--rgb {
+        border-left: 1px solid lighten($c__grey, 25%);
+      }
+
+      &.col--page--2 {
+        padding: 36px;
+      }
+
+      &.col--3 {
+        .retreat--wrapper {
+          width: 100%;
+
+          img {
+            text-align: left;
+            width: 80%;
+          }
+
+          .btn__wrapper {
+            margin-top: 18px;
+            left: 20%;
+            width: 80%;
+
+            .btn {
+              font: 16px "Montserrat", sans-serif;
+              text-transform: uppercase;
+              background: $c__blue;
+              outline: none;
+              border: none;
+              border-radius: 32px;
+              padding: 14px 32px 14px 32px;
+              color: $c__white;
+              box-shadow: 0px 0px 34px -8px rgba(90,90,90,1);
+            }
+          }
+        }
+
+        .speakers {
+          color: $c__black--off;
+          background: lighten($c__grey, 36%);
+          padding: 24px 18px;
+
+          .title {
+            font: normal 600 18px "Montserrat";
+            text-align: center;
+            margin-bottom: 32px;
+          }
+
+          .speaker {
+            font: 16px "Karla", sans-serif;
+            margin: 8px 0;
+
+            .name {
+              color: $c__blue;
+            }
+
+            .position {
+              margin: 2px 0;
+              font-style: italic;
+            }
+          }
+        }
+      }
+    }
+
+    .timeline {
+      width: 100%;
+      margin: 12% 0;
+      font: 16px "Montserrat", sans-serif;
+
+      .times {
+        padding: 0 2% 0 2%;
+
+        .time {
+          color: $c__blue;
+          display: inline-block;
+          width: 12.57%;
+          margin-bottom: 12px;
+          margin-right: 1%;
+
+          &.day {
+            &::before {
+              content: "";
+              display: block;
+              color: $c__grey;
+              font: 14px "Karla", sans-serif;
+              margin-bottom: 8px;
+            }
+          }
+
+          &.friday {
+            &::before {
+              content: "Friday";
+            }
+          }
+
+          &.saturday {
+            &::before {
+              content: "Saturday";
+            }
+          }
+
+          &.sunday {
+            &::before {
+              content: "Sunday";
+            }
+          }
+        }
+      }
+
+      .divider--h {
+        border: 0.8px solid $c__grey;
+      }
+
+      .events {
+        padding: 0 2% 0 2%;
+
+        .event {
+          margin-top: 12px;
+          display: inline-block;
+          font: 12px "Karla", sans-serif;
+          width: 12.57%;
+          margin-right: 1%;
+          vertical-align: bottom;
+        }
+      }
+    }
+
+    .btn__wrapper {
+      vertical-align: bottom;
+      margin-top: 48px;
+      left: 20%;
+      width: 80%;
+
+      .btn {
+        font: 16px "Montserrat", sans-serif;
+        text-transform: uppercase;
+        background: $c__blue;
+        outline: none;
+        border: none;
+        border-radius: 32px;
+        padding: 14px 32px 14px 32px;
+        color: $c__white;
+        box-shadow: 0px 0px 34px -8px rgba(90,90,90,1);
+      }
+    }
+  }
+}
