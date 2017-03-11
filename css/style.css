@@ -31,6 +31,9 @@
     display: inline-block; }
     .page .content .col:nth-child(3n) {
       margin-right: 0; }
+      @media (max-width: 970px) {
+        .page .content .col:nth-child(3n) {
+          margin-right: 2%; } }
     .page .content .col.col--1 {
       color: #5A5A5A;
       padding: 0 2%; }
@@ -64,13 +67,24 @@
         line-height: 1.4em; }
     .page .content .col.col--rgb {
       border-left: 1px solid #d7d7d7; }
+      @media (max-width: 970px) {
+        .page .content .col.col--rgb {
+          border-left: 0; } }
     .page .content .col.col--page--2 {
       padding: 36px; }
+      @media (max-width: 970px) {
+        .page .content .col.col--page--2 {
+          padding: 0;
+          margin-bottom: 8%; } }
     .page .content .col.col--3 .retreat--wrapper {
       width: 100%; }
       .page .content .col.col--3 .retreat--wrapper img {
         text-align: left;
         width: 80%; }
+        @media (max-width: 970px) {
+          .page .content .col.col--3 .retreat--wrapper img {
+            text-align: center;
+            width: 100%; } }
       .page .content .col.col--3 .retreat--wrapper .btn__wrapper {
         margin-top: 18px;
         left: 20%;
@@ -85,6 +99,17 @@
           padding: 14px 32px 14px 32px;
           color: #FFFFFF;
           box-shadow: 0px 0px 34px -8px #5a5a5a; }
+        @media (max-width: 1170px) {
+          .page .content .col.col--3 .retreat--wrapper .btn__wrapper {
+            left: 15%; } }
+        @media (max-width: 1030px) {
+          .page .content .col.col--3 .retreat--wrapper .btn__wrapper {
+            left: 5%; } }
+        @media (max-width: 970px) {
+          .page .content .col.col--3 .retreat--wrapper .btn__wrapper {
+            margin-top: 8%;
+            left: 2%;
+            width: 100%; } }
     .page .content .col.col--3 .speakers {
       color: #5A5A5A;
       background: #f3f3f3;
@@ -101,6 +126,11 @@
         .page .content .col.col--3 .speakers .speaker .position {
           margin: 2px 0;
           font-style: italic; }
+    @media (max-width: 970px) {
+      .page .content .col {
+        display: block;
+        margin-bottom: 5%;
+        width: 90%; } }
   .page .content .timeline {
     width: 100%;
     margin: 12% 0;
@@ -127,6 +157,9 @@
           content: "Sunday"; }
     .page .content .timeline .divider--h {
       border: 0.8px solid #979797; }
+      @media (max-width: 620px) {
+        .page .content .timeline .divider--h {
+          display: none; } }
     .page .content .timeline .events {
       padding: 0 2% 0 2%; }
       .page .content .timeline .events .event {
@@ -136,6 +169,9 @@
         width: 12.57%;
         margin-right: 1%;
         vertical-align: bottom; }
+    @media (max-width: 620px) {
+      .page .content .timeline {
+        display: none; } }
   .page .content .btn__wrapper {
     vertical-align: bottom;
     margin-top: 48px;
@@ -151,3 +187,40 @@
       padding: 14px 32px 14px 32px;
       color: #FFFFFF;
       box-shadow: 0px 0px 34px -8px #5a5a5a; }
+    @media (max-width: 970px) {
+      .page .content .btn__wrapper {
+        width: 100%;
+        left: 0;
+        margin-top: 18px; } }
+
+@media (max-width: 620px) {
+  .timeline--mobile {
+    font: 16px "Montserrat", sans-serif; }
+    .timeline--mobile .event {
+      margin-bottom: 16px; }
+      .timeline--mobile .event .time {
+        vertical-align: top;
+        color: #94B1CC;
+        display: inline-block;
+        width: 20%; }
+        .timeline--mobile .event .time.day::before {
+          content: "";
+          margin-bottom: 8px;
+          display: block;
+          color: #979797;
+          font: 14px "Karla", sans-serif; }
+        .timeline--mobile .event .time.friday::before {
+          content: "Friday"; }
+        .timeline--mobile .event .time.saturday::before {
+          content: "Saturday"; }
+        .timeline--mobile .event .time.sunday::before {
+          content: "Sunday"; } }
+      @media (max-width: 620px) and (max-width: 440px) {
+        .timeline--mobile .event .time {
+          width: 15%; } }
+
+@media (max-width: 620px) {
+      .timeline--mobile .event .name {
+        font: 14px "Karla", sans-serif;
+        display: inline-block;
+        vertical-align: bottom; } }
