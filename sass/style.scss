@@ -22,7 +22,7 @@
       &.title--bold {
         font: normal 600 40px "Montserrat";
         color: $c__white;
-        margin-right: 16px;
+        margin-right: 8px;
       }
 
       &.title--reg {
@@ -39,7 +39,6 @@
     .col {
       vertical-align: top;
       width: 32%;
-      margin-right: 2%;
       display: inline-block;
 
       &:nth-child(3n) {
@@ -76,6 +75,7 @@
       &.col--1 {
         color: $c__black--off;
         padding: 0 2%;
+				margin-right:2%;
 
         .title {
           &.title--bold {
@@ -97,10 +97,19 @@
           font: 16px "Karla";
           line-height: 1.4em;
         }
+					img {
+							width: 100%;
+							margin: 18px 0px;
+							@media (max-width: 970px) {
+									text-align: center;
+									width: 100%;
+						}
+					}
       }
 
       &.col--2 {
         color: $c__black--off;
+				margin-right:2%;
 
         .title {
           &.title--bold {
@@ -118,13 +127,13 @@
           }
         }
 
-        img {
-          width: 100%;
-        }
-
-        img.rgb {
-          margin: 18px 0;
-        }
+					img {
+							width: 100%;
+							@media (max-width: 970px) {
+									text-align: center;
+									width: 100%;
+						}
+					}
 
         .description {
           font: 16px "Karla";
@@ -147,25 +156,23 @@
           }
 			}
         
-        .speakers {
+        .information {
           color: $c__black--off;
-          background: lighten($c__grey, 36%);
+          background: lighten($c__grey, 38%);
           padding: 24px 18px;
 
           .title {
             font: normal 600 18px "Montserrat";
             text-align: center;
-            margin-bottom: 32px;
           }
 
-          .speaker {
+          .items {
             font: 16px "Karla", sans-serif;
             margin: 8px 0;
-
+						line-height: 1.4em;
             .name {
-              color: $c__key;
+              color: $c__black--off;
             }
-
             .position {
               margin: 2px 0;
               font-style: italic;
@@ -286,8 +293,10 @@
 @media (max-width: 620px) {
   .timeline--mobile {
     font: 16px "Montserrat", sans-serif;
-    margin: 48px 0;
-
+    margin: 48px auto;
+//		margin: 48px 0;
+		width: 70%;
+//		text-align: center;
     .event {
       margin-bottom: 16px;
 
@@ -295,7 +304,6 @@
         vertical-align: top;
         color: $c__key;
         display: inline-block;
-//        width: 30%;
 
         &.day {
           &::before {
@@ -304,7 +312,6 @@
             display: block;
             color: $c__grey;
             font: 14px "Karla", sans-serif;
-						width: 50%;
           }
         }
 
@@ -314,7 +321,7 @@
 					}
 				} 
         @media (max-width: 440px) {
-          width: 20%;
+          width: 50%;
         }
       }
 
